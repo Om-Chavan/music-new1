@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            flex-wrap: wrap;
+            /* width: 300px; */
+        }
+
+        div {
+            height: 350px;
+            /* width: 300px; */
+
+        }
+
+        audio {
+            border: solid;
+            /* margin: 50px; */
+            /* width: 300px; */
+        }
+
+        img {
+            border: red solid;
+            width: fit-content;
+            /* padding-right: 10px;
+            padding-left: 10px; */
+
+        }
+
+        div.main {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+    </style>
+
+    <title>Music App New</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <center>
+            <div class="container">
+
+                <img
+                    src="https://firebasestorage.googleapis.com/v0/b/songs-73646.appspot.com/o/images%2Fexcuse.jpg?alt=media&token=2e9f26fd-bbe4-4889-a822-51f203791b54">
+
+
+
+
+            </div>
+            <audio controls>
+                <source
+                    src="https://firebasestorage.googleapis.com/v0/b/songs-73646.appspot.com/o/Excuses.mp3?alt=media&token=e27559bd-4d29-42ff-9ec0-5de21a3e0cf4"
+                    type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <br><br><br><br>
+
+
+            <div class="container">
+
+                <img
+                    src="https://firebasestorage.googleapis.com/v0/b/songs-73646.appspot.com/o/images%2Fpasoori.jpg?alt=media&token=e8654b0e-f25c-404e-9db6-6c9b4786c1cc">
+            </div>
+            <audio controls>
+                <source
+                    src="https://firebasestorage.googleapis.com/v0/b/songs-73646.appspot.com/o/Pasoori.mp3?alt=media&token=99add130-4e55-43d8-9b06-a1f50c3e2dd9"
+                    type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+        </center>
+    </div>
+</body>
+
+
+</html>
