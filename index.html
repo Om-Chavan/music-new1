@@ -8,8 +8,13 @@
 
     <style>
         body {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
             flex-wrap: wrap;
             /* width: 300px; */
+
+
         }
 
         div {
@@ -26,7 +31,7 @@
 
         img {
             border: red solid;
-            width: fit-content;
+            /* width: 400px; */
             /* padding-right: 10px;
             padding-left: 10px; */
 
@@ -40,8 +45,7 @@
 
         .container {
             display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
+            flex-direction: column;
             flex-wrap: wrap;
         }
     </style>
@@ -54,37 +58,38 @@
     <div class="main">
         <center>
             <div class="container">
-
                 <img
                     src="https://firebasestorage.googleapis.com/v0/b/songs-73646.appspot.com/o/images%2Fexcuse.jpg?alt=media&token=2e9f26fd-bbe4-4889-a822-51f203791b54">
 
-
+                <audio controls>
+                    <source
+                        src="https://firebasestorage.googleapis.com/v0/b/songs-73646.appspot.com/o/Excuses.mp3?alt=media&token=e27559bd-4d29-42ff-9ec0-5de21a3e0cf4"
+                        type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
 
 
             </div>
-            <audio controls>
-                <source
-                    src="https://firebasestorage.googleapis.com/v0/b/songs-73646.appspot.com/o/Excuses.mp3?alt=media&token=e27559bd-4d29-42ff-9ec0-5de21a3e0cf4"
-                    type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
 
-            <br><br><br><br>
+    </div>
+    <br><br><br><br>
+
+    <div class="container">
+
+        <img
+            src="https://firebasestorage.googleapis.com/v0/b/songs-73646.appspot.com/o/images%2Fpasoori.jpg?alt=media&token=e8654b0e-f25c-404e-9db6-6c9b4786c1cc">
+
+        <audio controls>
+            <source
+                src="https://firebasestorage.googleapis.com/v0/b/songs-73646.appspot.com/o/Pasoori.mp3?alt=media&token=99add130-4e55-43d8-9b06-a1f50c3e2dd9"
+                type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
 
 
-            <div class="container">
 
-                <img
-                    src="https://firebasestorage.googleapis.com/v0/b/songs-73646.appspot.com/o/images%2Fpasoori.jpg?alt=media&token=e8654b0e-f25c-404e-9db6-6c9b4786c1cc">
-            </div>
-            <audio controls>
-                <source
-                    src="https://firebasestorage.googleapis.com/v0/b/songs-73646.appspot.com/o/Pasoori.mp3?alt=media&token=99add130-4e55-43d8-9b06-a1f50c3e2dd9"
-                    type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-
-        </center>
+    </center>
     </div>
 </body>
 
