@@ -6,7 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+<style>
+    div{
+        border: solid;
+        width: fit-content;
+    }
+    audio{
+        border: solid;
+    }
+</style>
     <script>
         // Your web app's Firebase configuration
 var firebaseConfig = {
@@ -28,6 +36,7 @@ function Excuses_play() {
     console.log("Excuses playing"); 
     var audio = document.getElementById("Pasoori")
     audio.pause();
+ 
   }
 
 
@@ -91,14 +100,13 @@ function Pasoori_play() {
     <title>Document</title>
 </head>
 
-<body>
+<body><center>
 
-
-    <!-- <progress id="progress_bar" value="0" max="100"></progress> -->
+    
     <div class="song1">
 
     <img
-        src="https://firebasestorage.googleapis.com/v0/b/songs-73646.appspot.com/o/images%2Fexcuse.jpg?alt=media&token=2e9f26fd-bbe4-4889-a822-51f203791b54">
+        src="https://firebasestorage.googleapis.com/v0/b/songs-73646.appspot.com/o/images%2Fexcuse.jpg?alt=media&token=2e9f26fd-bbe4-4889-a822-51f203791b54" alt="Excuses Image">
 
 <br>
 
@@ -111,23 +119,24 @@ function Pasoori_play() {
 <br><br>
 <div class="song2">
     <img
-        src="https://firebasestorage.googleapis.com/v0/b/songs-73646.appspot.com/o/images%2Fpasoori.jpg?alt=media&token=e8654b0e-f25c-404e-9db6-6c9b4786c1cc">
+        src="https://firebasestorage.googleapis.com/v0/b/songs-73646.appspot.com/o/images%2Fpasoori.jpg?alt=media&token=e8654b0e-f25c-404e-9db6-6c9b4786c1cc" alt="Pasoori Image">
 
         <br>
 
 
     <audio id="Pasoori" controls onplay="Pasoori_play()" onpause="Pasoori_pause()">
 
-        <source
+        <source 
             src="https://firebasestorage.googleapis.com/v0/b/songs-73646.appspot.com/o/Pasoori.mp3?alt=media&token=99add130-4e55-43d8-9b06-a1f50c3e2dd9"
             type="audio/mpeg">
     </audio>
 </div>
+
     <!-- 
     <input type="button" value="Play" id="play" onclick="play()">
     <input style="display:none;" type="button" value="Pause" id="pause" onclick="pause()" style="display: none;"></input> 
 -->
 
-</body>
+</body></center>
 
 </html>
